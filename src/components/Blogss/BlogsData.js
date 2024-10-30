@@ -1,0 +1,56 @@
+export const blogs = [
+    {
+      imgPath: chatify,
+      isBlog: false,
+      title: "Chatify",
+      description: "Personal Chat Room or Workspace to share resources and hang out with friends built with React.js, Material-UI, and Firebase...",
+      ghLink: "https://github.com/soumyajit4419/Chatify",
+      demoLink: "https://chatify-49.web.app/",
+      id: 1,
+    },
+    {
+      imgPath: bitsOfCode,
+      isBlog: false,
+      title: "Bits-0f-C0de",
+      description: "My personal blog page built with Next.js and Tailwind CSS, which renders markdown content and supports dark mode...",
+      ghLink: "https://github.com/soumyajit4419/Bits-0f-C0de",
+      demoLink: "https://blogs.soumya-jit.tech/",
+      id: 2,
+    },
+    {
+      imgPath: editor,
+      isBlog: false,
+      title: "Editor.io",
+      description: "Online code and markdown editor built with React.js. Supports HTML, CSS, and JavaScript with instant preview...",
+      ghLink: "https://github.com/soumyajit4419/Editor.io",
+      demoLink: "https://editor.soumya-jit.tech/",
+      id: 3,
+    },
+    {
+      imgPath: leaf,
+      isBlog: false,
+      title: "Plant AI",
+      description: "Image classifier model trained on a plant disease dataset using PyTorch with CNN and Transfer Learning...",
+      ghLink: "https://github.com/soumyajit4419/Plant_AI",
+      demoLink: "https://plant49-ai.herokuapp.com/",
+      id: 4,
+    },
+    {
+      imgPath: suicide,
+      isBlog: false,
+      title: "AI For Social Good",
+      description: "Using Natural Language Processing for detecting suicide-related posts to assist in suicide prevention...",
+      ghLink: "https://github.com/soumyajit4419/AI_For_Social_Good",
+      demoLink: "", // Include a valid demo link if available
+      id: 5,
+    },
+    {
+      imgPath: emotion,
+      isBlog: false,
+      title: "Face Recognition and Emotion Detection",
+      description: "Trained a CNN classifier using the FER-2013 dataset with Keras and TensorFlow backend...",
+      ghLink: "https://github.com/soumyajit4419/Face_And_Emotion_Detection",
+      demoLink: "", // Include a valid demo link if available
+      id: 6,
+    },
+  ];

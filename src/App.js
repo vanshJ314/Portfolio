@@ -16,6 +16,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Blogss from "./components/Blogss/Blogss";
+import BlogDetail from "./components/Blogss/BlogDetail";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -40,11 +42,15 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="/blogs" element={<Blogss />} />
+          <Route path="/blogs/:id" element={<BlogDetail />} />
+
         </Routes>
         <Footer />
       </div>
     </Router>
   );
 }
+
 
 export default App;

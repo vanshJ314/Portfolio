@@ -4,7 +4,6 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
   AiOutlineMail,
 } from "react-icons/ai";
@@ -41,19 +40,7 @@ function Home2() {
                 </b>
               </i>
               <br />
-              {/* <br /> */}
-              {/* Whenever possible, I also apply my passion for developing products */}
-              {/* with <b className="purple">Node.js</b> and */}
-              {/* <i> */}
-                {/* <b className="purple"> */}
-                  {/* {" "} */}
-                  {/* Modern Javascript Library and Frameworks */}
-                {/* </b> */}
-              {/* </i> */}
-              {/* &nbsp; like */}
-              {/* <i> */}
-                {/* <b className="purple"> React.js and Next.js</b> */}
-              {/* </i> */}
+            
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -79,16 +66,7 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
-              {/* <li className="social-icons"> */}
-                {/* <a */}
-                  {/* href="https://twitter.com/Soumyajit4419" */}
-                  {/* target="_blank" */}
-                  {/* rel="noreferrer" */}
-                  {/* className="icon-colour  home-social-icons" */}
-                {/* > */}
-                  {/* <AiOutlineTwitter /> */}
-                {/* </a> */}
-              {/* </li> */}
+              
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/vanshj03/"

@@ -1,43 +1,43 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import BlogssCards from "./BlogssCards";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
-
-import blogs
+import { blogs } from "./BlogsData";
 
 function Blogss() {
   return (
-    <Container fluid className="project-section">
+    <div className="bg-gray-900 text-white py-20 px-4">
       <Particle />
-      <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works</strong>
+      <div className="max-w-screen-xl mx-auto text-center">
+        <h1 className="text-4xl font-bold mb-4">
+          My Recent <span className="text-purple-500">Works</span>
         </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+        <p className="text-gray-300 mb-8">
+          Here are a few blogs I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {projects.map((project) => (
-            <Col key={project.id} md={4} className="project-card">
-              <BlogssCards
-                imgPath={project.imgPath}
-                isBlog={project.isBlog}
-                title={project.title}
-                description={project.description}
-                ghLink={project.ghLink}
-                demoLink={project.demoLink}
-              />
-            </Col>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {blogs.map((blog) => (
+            <BlogssCards
+              key={blog.id}
+              title={blog.title}
+              content={blog.content}
+              summary={blog.summary}
+              author={blog.author}
+              publicationDate={blog.publicationDate}
+              lastUpdatedDate={blog.lastUpdatedDate}
+              tags={blog.tags}
+              categories={blog.categories}
+              readingTime={blog.readingTime}
+              featuredImage={blog.featuredImage}
+              keywords={blog.keywords}
+              status={blog.status}
+              viewsCount={blog.viewsCount}
+              relatedPosts={blog.relatedPosts}
+              id={blog.id}
+            />
           ))}
-        </Row>
-      </Container>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 }
 
